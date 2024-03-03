@@ -1,0 +1,231 @@
+body{
+    font-family: "Inter", sans-serif;
+    background: #F3F5FC;
+}
+
+header{
+    padding: 40px 40px;
+}
+
+.logo{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;    
+}
+
+/*Entrada de texto y botones*/
+
+.inputs{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.input-padron{
+    font-family: "Inter", sans-serif;
+    width: 70%;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    color: #0A3871;
+    font-size: 1.7rem;
+}
+.input-padron::placeholder{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #0A3871; 
+    font-size: 1.7rem;
+    text-shadow: 0 1px 2px black;
+}
+.imgVector{
+    padding: 0 5px 0 0;
+    width: 12px;
+    height: 12px;
+}
+.inputs p{
+    padding: 10px 0;
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.encriptarstyle, .desencriptarstyle, .copiarstyle{
+    width: 328px;
+    margin: 10px 24px 10px 0;
+    padding: 15px 0;
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+}
+
+.encriptarstyle{
+    color: white;
+    background: #0A3871;
+}
+
+.desencriptarstyle, .copiarstyle{
+    color: #0A3871;
+    background: #D8DFE8;
+}
+
+/*Recuadro de resultados de incriptación*/
+.resultado{
+    background: white;
+    border-radius: 32px;
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    box-shadow: 0px  24px 32px -20px black;
+    text-align: center;
+}
+
+.contenidoDefault{
+    margin: 25% 0;
+}
+
+.imgMuneco{
+    width: 70%;
+}
+
+.text1, .text2{
+    margin: 20px 0 0 0;
+    color: #343A40;
+}
+
+.text1{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.text2{
+    font-size: 1rem;
+}
+
+.contenidoModificado{
+    display: none;
+    overflow-wrap: break-word;
+}
+
+.textResultado{
+    padding: 10% 10%;
+    font-size: 1.25rem;
+    color: #495057;
+    text-align: left;
+}
+
+.copiarstyle{
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+}
+
+/*Pie de pagina*/
+footer{
+    text-align: center;
+    padding: 5px;
+}
+
+.copyright{
+    color: #0A3871;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+/*Configuración para celulares*/
+@media screen and (max-width: 480px){
+    header{
+        padding: 2rem 0;
+    }
+    .inputs{
+        width: auto;
+        padding: 0 1.5rem;
+    }
+    .input-padron{
+        width: 100%;
+    }
+    .input-padron::placeholder{
+        font-weight: normal;
+    }
+    .encriptarstyle, .desencriptarstyle{
+        width: 100%;
+        position: static;
+        margin: 0.6rem auto;
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+    .resultado{
+        position: relative;
+        width: auto;
+        height: auto;
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+    .contenidoDefault, .contenidoModificado{
+        margin: 1em 1em;
+    }
+    .textResultado{
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+    .imgMuneco{
+        display: none;
+    }
+    .copiarstyle{
+        width: 100%;
+        margin: 1rem auto 0 auto;
+        position: static;
+    }
+}
+/*Configuración para tabletas*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header{
+        padding: 2rem 0;
+    }
+    .inputs{
+        width: auto;
+        padding: 0 1.5rem;
+    }
+    .input-padron{
+        width: 100%;
+    }
+    .input-padron::placeholder{
+        font-weight: normal;
+    }
+    .encriptarstyle, .desencriptarstyle{
+        display: inline;
+        width: 47%;
+        position: static;
+        margin: 0.6rem 0;
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+    .encriptarstyle{
+        margin: 0.6rem 2%;
+    }
+    .resultado{
+        position: relative;
+        width: auto;
+        height: auto;
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+    .contenidoDefault, .contenidoModificado{
+        margin: 1em 1em;
+    }
+    .textResultado{
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+    .imgMuneco{
+        display: none;
+    }
+    .copiarstyle{
+        width: 100%;
+        margin: 1rem auto 0 auto;
+        position: static;
+    }
+}

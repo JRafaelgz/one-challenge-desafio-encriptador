@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1">
+    <title>Encriptador - Alura Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <h1> <img src="img/Logo.png"> </h1>
+        </div>
+    </header>
+    <main>
+        <div class="inputs">
+            <label for="inputTexto"></label>
+            <textarea cols="70" rows="10" id="inputTexto" class="input-padron" placeholder="Ingrese el texto aquí"></textarea>
+            <p><img src="img/Vector.png" class="imgVector">Solo letras minúsculas y sin acentos</p>
+            <button onclick="encriptar();" class="encriptarstyle">Encriptar</button>
+            <button onclick="desencriptar();" class="desencriptarstyle">Desencriptar</button>
+        </div>
+        <div class="resultado">
+            <div class="contenidoModificado">
+                <p class="textResultado" id="outputTexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+                <button onclick="copytext();" class="copiarstyle">Copiar</button>
+            </div>
+            <div class="contenidoDefault">
+                <img src="img/Muñeco.png" class="imgMuneco">
+                <p class="text1">Ningún mensaje fue encontrado</p>
+                <p class="text2">ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy JRafaelgz - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
